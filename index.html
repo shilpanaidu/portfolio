@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,9 +55,9 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <header id="home">
     <div class="container text-center">
-        <h1 class="section-title">Main Banner</h1>
-        <p>Introduction text goes here</p>
-        <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+        <h1>Shilpa Naidu</h1>
+        <p>PROFESSIONAL WEB DEVELOPER</p>
+        <p><a class="btn btn-primary btn-lg" href="#about">Learn more &raquo;</a></p>
     </div>
 </header>
 
@@ -67,13 +66,13 @@
 <div id="about" class="section">
     <div class="container">
         <h2 class="section-title">About Me</h2>
+        <div class="spacer"></div>
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-4">
                     <img src="img/profile-img.jpg" width="220" height="300" alt="shilpa">
                 </div>
                 <div class="col-md-8">
-                    <h2>Heading</h2>
                     <p>I am a qualified Software Developer with a graduate degree in Computer Science Engineering and over 6 years of experience. All these years, I have been associated with multi-national companies like Pegasystems and Infosys Technologies Ltd. working on technologies like Java, JavaScript, HTML, CSS and PRPC. I have worked on large scale, multi-tier applications building innovative technology solutions to help clients achieve their business objectives. These experiences were full of challenges and I learnt a lot by learning and sharing. </p>
                     <p> I believe I have a lot to offer and great potential to progress further in my career while consistently adding value to the clients. I have gained most recent experience in web development from IRIS, a UK based cloud services provider.</p>
                 </div>
@@ -85,6 +84,7 @@
 <div id="profile" class="section">
     <div class="container">
          <h2 class="section-title">Profile</h2>
+        <div class="spacer"></div>
         <!-- Example row of columns -->
         <div class="row">
            <div class="col-md-12">
@@ -148,82 +148,86 @@
 <div id="skills" class="section">
     <div class="container">
         <h2 class="section-title">Skills</h2>
+        <div class="spacer"></div>
         <div class="row">
-            <div class="col-md-12">
-                
-                
-                    <h3>Web Development</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 60%;"></div>
-                    </div>
+           <div class="col-md-2">
+               <span class="chart" data-percent="75">
+                   <span class="percent">75</span>
                     <h3>HTML</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                    <h3>CSS</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                   </div>
-                    <h3>PHP</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 50%;"></div>
-                    </div>
-                   </div>
-                    <h3>CSS</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 40%;"></div>
-                    </div>
-                   </div>
-                    
-           
+               </span>
+           </div>
+           <div class="col-md-2">
+               <span class="chart" data-percent="75">
+                   <span class="percent">75</span>
+                   <h3>CSS</h3>
+               </span>
+           </div>
+           <div class="col-md-2">
+               <span class="chart" data-percent="75">
+                   <span class="percent">75</span>
+                   <h3>jQuery</h3>
+               </span>
+           </div>
+           <div class="col-md-2">
+               <span class="chart" data-percent="75">
+                   <span class="percent">75</span>
+                   <h3>PHP</h3>
+               </span>
+           </div>
+           <div class="col-md-2">
+               <span class="chart" data-percent="75">
+                   <span class="percent">75</span>
+                   <h3>Javascript</h3>
+               </span>
+           </div>
+           <div class="col-md-2">
+               <span class="chart" data-percent="75">
+                   <span class="percent">75</span>
+                   <h3>Bootstrap</h3>
+               </span>
+           </div>
         </div>
     </div>
 </div>
 
-<div id="contact" class="section" style="padding-top: 500px;">
+<div id="contact" class="section">
     <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <div class="row">
+            <h2 class="section-title">Contact Me</h2>
+        </div>
+        <div class="spacer"></div>
         <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-4">
-                <h2>Contact Me</h2>
-                <p>110, 26 High Street </p>
-                <p>Slough, SL11ER</p>
-                <p>Mobile: 07704492205</p>
-                <p>Email: shilpanaidu85@yahoo.com</p>
+            <div class="col-sm-5">
+                <h3>Contact Info</h3>
+                <p><i class="fa fa-phone"></i> +44 7704 492 205</p>
+                <p><i class="fa fa-envelope-o"></i> shilpanaidu85@yahoo.com</p>
             </div>
-            <div class="col-md-8">
+            <div class="col-sm-7">
+                <h3>Get in Touch</h3>
                 <form class="form-horizontal">
-                  <fieldset>
-   
-                      <div class="form-group">
-                      <label for="name" class="col-lg-2 control-label">Name</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    <div class="control-group">
+                      <label for="name" class="control-label">Name</label>
+                      <div class="controls">
+                        <input type="text" class="form-control input-lg" id="name" placeholder="Your Name">
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                    <div class="control-group">
+                      <label for="inputEmail" class="control-label">Email</label>
+                      <div class="controls">
+                        <input type="text" class="form-control input-lg" id="inputEmail" placeholder="Your Email">
                       </div>
                     </div>
     
-                    <div class="form-group">
-                      <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-                      <div class="col-lg-10">
-                        <textarea class="form-control" rows="3" id="textArea"></textarea>
-                        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    <div class="control-group">
+                      <label for="textArea" class="control-label">Message</label>
+                      <div class="controls">
+                        <textarea class="form-control input-lg" rows="8" id="textArea" placeholder="Your Message"></textarea>
                       </div>
                     </div>
-                      <div class="form-group">
-                      <div class="col-lg-10 col-lg-offset-2">
-                        <button type="reset" class="btn btn-default">Cancel</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-default">SUBMIT MESSAGE</button>
                     </div>
-                  </fieldset>
                 </form>
                 
             </div>
@@ -249,6 +253,8 @@
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/jquery.backstretch.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="./js/jquery.easypiechart.min.js"></script>
+<script src="./js/jquery.waypoints.min.js"></script>
 <script src="./js/app.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>

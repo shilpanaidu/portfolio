@@ -1,4 +1,5 @@
 body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 #portfolio-navbar {
@@ -89,18 +90,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.888888888888889em;
+    font-size: 4.5em;
     text-transform: uppercase;
     font-weight: 700;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.1em;
 }
 
 .section-title {
   margin: 0 0 20px;
   text-align: center;
-  font-size: 19px;
+  font-size: 2.2em;
   letter-spacing: 1px;
-  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -129,9 +130,10 @@ h1 {
 }
 
 #about,
-#profile, #skills,
-#contact {
-    padding: 120px 0 40px 0;
+#profile,
+#contact,
+#skills {
+    padding: 75px 0;
 }
 
 
@@ -163,7 +165,81 @@ h1 {
     top: 50%;
     width:  100%;
     margin-top: -120px;
-    z-index: -1;
+}
+
+#home .container p {
+    font-size: 2em;
+}
+
+#home .container .btn,
+#contact .btn {
+    margin:  40px auto 0;
+    background: transparent;
+    position:  relative;
+    color:  #fff;
+    font-size:  0.5em;
+    text-transform:  uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding:  12px 26px 12px;
+    cursor:  pointer;
+    border:  2px solid #EC9F05;
+    letter-spacing: 2px;
+    pointer-events: auto;
+    border-color:  #fff;
+    border-radius: 0;
+    -webkit-transition:  all 0.1s ease-in-out;
+    -moz-transition:  all 0.1s ease-in-out;
+    -o-transition:  all 0.1s ease-in-out;
+    transition:  all 0.1s ease-in-out;
+}
+
+#contact .btn {
+    font-size:  1em;
+}
+
+#home .container .btn:hover,
+#contact .btn:hover {
+    background-color: #EC9F05;
+    color:  #2d2e2e;
+}
+
+#contact .contact-info p {
+    font-size: 0.8em;
+}
+
+.spacer {
+    width:  200px;
+    height: 2px;
+    margin: 5px auto 30px auto;
+    background: #EC9F05;
+}
+
+.chart {
+    position:  relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 50px auto;
+    text-align:  center;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent {
+    display: inline-block;
+    line-height: 150px;
+    z-index: 2;
+}
+
+.percent:after {
+    content:  '%';
+    margin-left: 0.1em;
+    font-size: .8em;
 }
 
 .timeline {
