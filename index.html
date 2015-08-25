@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Shilpa Naidu</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -70,7 +70,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-4">
-                    <img src="img/profile-img.jpg" width="220" height="300" alt="shilpa">
+                    <img id="profilePicture" src="img/profile-img.jpg" width="220" height="300" alt="shilpa">
                 </div>
                 <div class="col-md-8">
                     <p>I am a qualified Software Developer with a graduate degree in Computer Science Engineering and over 6 years of experience. All these years, I have been associated with multi-national companies like Pegasystems and Infosys Technologies Ltd. working on technologies like Java, JavaScript, HTML, CSS and PRPC. I have worked on large scale, multi-tier applications building innovative technology solutions to help clients achieve their business objectives. These experiences were full of challenges and I learnt a lot by learning and sharing. </p>
@@ -222,28 +222,31 @@
             </div>
             <div class="col-sm-7">
                 <h3>Get in Touch</h3>
-                <form class="form-horizontal">
-                    <div class="control-group">
+                <form data-toggle="validator" id="contactForm" class="form-horizontal" role="form">
+                    <div class="form-group">
                       <label for="name" class="control-label">Name</label>
                       <div class="controls">
-                        <input type="text" class="form-control input-lg" id="name" placeholder="Your Name">
+                        <input name="clientName" type="text" class="form-control input-lg" id="name" placeholder="Your Name" data-error="Please enter your name" required>
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
-                    <div class="control-group">
+                    <div class="form-group">
                       <label for="inputEmail" class="control-label">Email</label>
                       <div class="controls">
-                        <input type="text" class="form-control input-lg" id="inputEmail" placeholder="Your Email">
+                        <input name="clientEmailId" type="email" class="form-control input-lg" id="inputEmail" placeholder="Your Email" data-error="Please enter a valid email address" required>
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
     
-                    <div class="control-group">
+                    <div class="form-group">
                       <label for="textArea" class="control-label">Message</label>
                       <div class="controls">
-                        <textarea class="form-control input-lg" rows="8" id="textArea" placeholder="Your Message"></textarea>
+                        <textarea name="clientMessage" class="form-control input-lg" rows="8" id="textArea" placeholder="Your Message" data-error="Please enter a message" required></textarea>
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-default">SUBMIT MESSAGE</button>
+                        <button type="submit" id="sendMail" class="btn btn-default">SUBMIT MESSAGE</button>
                     </div>
                 </form>
                 
@@ -269,6 +272,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/validator.min.js"></script>
 <script src="./js/jquery.backstretch.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 <script src="./js/jquery.easypiechart.min.js"></script>

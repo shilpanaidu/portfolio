@@ -18,7 +18,7 @@ body {
 #portfolio-navbar .container .navbar-brand {
     font-family: 'Satisfy', cursive;
     font-size:  16px;
-    color:  #EC9F05;
+    color:  #fff;
     font-weight: bolder;
 }
 
@@ -54,6 +54,10 @@ body {
     color: #EC9F05;
 }
 
+#portfolio-navbar.scrolled .navbar-brand {
+    color: #EC9F05;
+}
+
 #portfolio-navbar.scrolled .nav a, 
 #portfolio-navbar.scrolled .nav a:active, 
 #portfolio-navbar.scrolled .nav a:hover {
@@ -68,6 +72,12 @@ body {
 
 #portfolio-navbar.scrolled .navbar-toggle .icon-bar {
     background-color: #74c7d5;
+}
+
+#profilePicture {
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
 }
 
 .backstretch {
@@ -287,12 +297,12 @@ h1 {
         .timeline > li > .timeline-panel {
             width: 46%;
             float: left;
-            border: 1px solid #d4d4d4;
-            border-radius: 2px;
+            border-radius: 10px;
+            background-color: #fff;
             padding: 20px;
             position: relative;
-            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
         }
 
             .timeline > li > .timeline-panel:before {
